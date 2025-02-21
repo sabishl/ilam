@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutor Selection</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cover bg-center font-sans" style="background-image: url('bg.jpg')">
+  <div class="container mx-auto p-0">
+    <!-- Header Section -->
+    <header class="flex items-center bg-gradient-to-r from-green-900 to-black py-10 px-10">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" class="w-24 absolute -translate-y-2" />
+      </div>
+    </header>
+
+    <!-- Main Header Text -->
+    <div class="header-text py-14 text-white text-center relative">
+      <h1 class="text-left text-green-900 text-5xl font-bold italic absolute left-40 top-1/2 transform -translate-y-1/2 slide-in-left">
+        SOWING KNOWLEDGE,
+      </h1>
+      <h2 class="py-5 text-transparent text-4xl italic font-bold stroke-green absolute left-48 top-1/5 transform -translate-y-1/2 mt-6 slide-in-right">
+        GROWING FUTURES
+      </h2>
+    </div>
+
+    <!-- Main Section -->
+    <main class="flex items-center justify-center py-10">
+      <section class="grid md:grid-cols-2 gap-3 w-full px-4">
+        <!-- Left Side: Illustration -->
+        <div class="flex justify-center items-center">
+          <img src="main.png" alt="Illustration" class="max-w-2/3 max-h-72 object-cover hover:scale-105 transition-transform fade-in animate-on-scroll" />
+        </div>
+        
+        <!-- Right Side: Options -->
+        <div class="border-2 rounded-2xl bg-white shadow-2xl text-center p-4 slide-in-right animate-on-scroll">
+          <h3 class="font-bold text-center text-green-700 text-2xl mb-3">CHOOSE AN OPTION</h3>
+          <p class="text-green-800 italic mb-4 pr-2">
+            Greetings from <b>Ilamthalir Academy</b>. Please click on the suitable link below.
+            If you are a parent or student, please click on "I need a Tutor" and if you are a teacher, 
+            please click on "I am a Tutor". We look forward to your cooperation.
+          </p>
+          <div class="flex flex-col gap-5 items-center py-5">
+            <a href="form1.html">
+            <button id="tutor" class="btn btn-success w-64 text-center text-green-700 border-2 border-green-700 bg-transparent rounded-full py-2 text-lg font-bold italic hover:bg-green-700 hover:text-white shadow-2xl">
+              I AM A TUTOR
+            </button>
+          </a>
+          <a href="form2.php">
+            <button id="needTutor" class="btn btn-primary w-64 text-center text-blue-700 border-2 border-blue-700 bg-transparent rounded-full py-2 text-lg font-bold italic hover:bg-blue-700 hover:text-white shadow-2xl">
+              I NEED A TUTOR
+            </button>
+          </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <!-- Secondary Section -->
+<section class="py-10 animate-on-scroll">
+  <div class="container p-4 flex flex-col md:flex-row items-center ">
+    <!-- Left Side: Text Content -->
+    <div class="md:w-1/2 px-4 mb-6 md:mb-0 text-center md:text-left">
+      <div class="flex justify-center items-center mb-4">
+        <img 
+          src="thinking.png" 
+          alt="Empowering Education" 
+          class="w-1/2 md:w-1/3 h-auto slide-in-right"
+        >
+      </div>
+      <h1 class="text-green-900 italic text-3xl md:text-4xl font-medium mb-3 slide-in-right">
+        Experience your
+      </h1>
+      <h2 class="text-3xl flex justify-center text-green-900 md:text-5xl italic font-bold mb-3 slide-in-left">
+        QUALITY EDUCATION
+      </h2>
+      <h3 class="text-1xl flex justify-end px-20 md:text-3xl text-green-800 italic slide-in-right">
+        From Anywhere, Anytime
+      </h3>
+    </div>
+    <!-- Right Side: Images -->
+    <div class="md:w-1/2 flex justify-center">
+      <img 
+        src="lapad.png" 
+        alt="Empowering Education" 
+        class="w-1/2 md:w-3/4 h-auto slide-in-right"
+      >
+    </div>
+    
+  </div>
+</section>
+<section class="py-10 ">
+  <!-- Heading with responsive text alignment -->
+  <h1 class="text-green-900  text-3xl font-bold md:text-5xl mb-3 px-4 text-center md:text-left shadow-text">
+    WHY ONLINE TUITION
+  </h1>
+
+  <!-- Subheading with text shadow and responsive styles -->
+  <h2 class="text-green-700 italic text-xl md:text-3xl text-center shadow-text py-5">
+    Ilamthalir = Knowledge Sapling
+  </h2>
+
+  <!-- Image and text section for mobile -->
+  <div class="md:hidden flex flex-col items-center p-3">
+    <div class="image-slide w-full text-center transition-transform duration-500 transform" id="imageContainer">
+      <img src="ad1.png" alt="Image 1" class="w-28 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-2">Student Centric Teaching</p>
+      <p class="flex items-center p-3 font-sans">Customised teaching plan based on student necessity.</p>
+    </div>
+    <div class="image-slide w-full text-center transition-transform duration-500 transform" id="imageContainer">
+      <img src="ad2.png" alt="Image 2" class="w-28 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-2">Continuous Evaluation</p>
+      <p class="p-3 font-sans">Well-timed assessments for comprehensive knowledge of concepts.</p>
+    </div>
+    <div class="image-slide w-full text-center transition-transform duration-500 transform" id="imageContainer">
+      <img src="ad3.png" alt="Image 3" class="w-28 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-2">Expert Educators</p>
+      <p class="p-3 font-sans">Curated team of professionals to impart unparalleled tutoring solution.</p>
+    </div>
+    <div class="image-slide w-full text-center transition-transform duration-500 transform" id="imageContainer">
+      <img src="ad4.png" alt="Image 4" class="w-28 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-2">Customized Supervision</p>
+      <p class="p-3 font-sans">Regular feedback and follow-up sessions for correct estimation.</p>
+    </div>
+  </div>
+
+  <!-- For desktop: images in a row (4 images per row) -->
+  <div class="hidden md:flex md:flex-row justify-between py-5 px-3 font-sans italic">
+    <div class="w-1/4 text-center">
+      <img src="ad1.png" alt="Image 1" class="w-3/4 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300 ">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-3">Student Centric Teaching</p>
+      <p class="p-3">Customised teaching plan based on student necessity.</p>
+    </div>
+    <div class="w-1/4 text-center">
+      <img src="ad2.png" alt="Image 2" class="w-3/4 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300 ">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-3">Continuous Evaluation</p>
+      <p class="p-3">Well-timed assessments for comprehensive knowledge of concepts.</p>
+    </div>
+    <div class="w-1/4 text-center">
+      <img src="ad3.png" alt="Image 3" class="w-3/4 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300 ">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-3">Expert Educators</p>
+      <p class="p-3">Curated team of professionals to impart unparalleled tutoring solution.</p>
+    </div>
+    <div class="w-1/4 text-center">
+      <img src="ad4.png" alt="Image 4" class="w-3/4 h-auto mx-auto mb-4 hover:scale-105 transition-all duration-300 ">
+      <p class="text-green-700 font-semibold border-2 border-grey-300 rounded-3xl shadow-2xl inline-block p-3">Customized Supervision</p>
+      <p class="p-3">Regular feedback and follow-up sessions for correct estimation.</p>
+    </div>
+  </div>
+</section>
+<section class="h-screen flex items-center justify-center py-5">
+  <!-- Image Container -->
+  <div class="flex-1 h-3/4 overflow-auto relative">
+    <!-- Images displayed in column for desktop and row for mobile -->
+    <div class="flex flex-col md:flex-row justify-between gap-3 p-2">
+      <!-- Image 1 -->
+      <div class="image-item w-full md:w-1/3 transition-transform duration-500 transform hover:translate-y-1">
+        <img src="vision.png" alt="Vision" class="w-full h-80 object-contain mx-auto">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="image-item w-full md:w-1/3 transition-transform duration-500 transform hover:scale-110">
+        <img src="mission.png" alt="Mission" class="w-full h-80 object-contain mx-auto">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="image-item w-full md:w-1/3 transition-transform duration-500 transform hover:scale-110">
+        <img src="moto.png" alt="Moto" class="w-full h-80 object-contain mx-auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Footer Section -->
+ <footer id="contact" class="footer bg-dark text-white py-4 font-sans">
+  <div class="container text-center">
+      <h3>Contact Us</h3>
+      <p>
+          <i class="fas fa-envelope"></i>Email: <a href="mailto:ilamthaliracademy@gmail.com" class="text-white">ilamthaliracademy@gmail.com</a>
+      </p>
+      <p>
+          <i class="fas fa-phone-alt"></i>Phone: <a href="tel:+918668045934" class="text-white">+91 866 804 5934</a> 
+          | <a href="tel:+918220415594" class="text-white">+91 8220415594</a>
+      </p>
+      <p>
+          <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/company/ilamthaliracademy" class="text-white" target="_blank"><b>Ilamthalir</b></a>
+      </p>
+  </div>
+</footer>
+
+ </div>
+
+  <!-- Script -->
+ 
+  <script src="script.js"></script>
+</body>
+</html>
